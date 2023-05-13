@@ -20,11 +20,6 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Table of Contents',
-        name: 'contents',
-    },
-    {
-        type: 'input',
         message: 'Installation Instuctions:',
         name: 'installation',
     },
@@ -37,7 +32,25 @@ const questions = [
         type: 'list',
         message: 'License Used:',
         name: 'license',
-        choices: ['MIT', 'ISC', 'APACHE 2.0']
+        choices: [
+            {
+                name: 'MIT', 
+                value: 'MIT'
+            },
+            {
+                name: 'ISC', 
+                value: 'ISC'
+            },
+            {   
+                name: 'APACHE 2.0',
+                value: 'apache'
+            }
+        ]
+    },
+    {
+        type: 'input',
+        message: 'Screenshot URL(optional):',
+        name: 'screenshot',
     },
     {
         type: 'input',
@@ -69,7 +82,6 @@ const generateReadMe = require('./generateMarkdown');
 function init() {
     inquirer.prompt(questions)
     .then((response) => {
-        console.log(response);
         const page = generateReadMe(response);
         console.log(page);
         writeToFile('README.md', page);
