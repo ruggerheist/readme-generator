@@ -66,6 +66,11 @@ const questions = [
         type: 'input',
         message: 'What Email Should be Used for Questions?',
         name: 'email',
+    },
+    {
+        type: 'input',
+        message: 'What is Your Github address?',
+        name: 'github',
     }
 ];
 

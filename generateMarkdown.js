@@ -26,7 +26,7 @@ function renderScreenshot(data){
 };
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) { //template for readme goes inside return function
+function generateMarkdown(data) { 
   return `# ${data.title} ${renderLicenseBadge(data.license)}
 ## Description
   - ${data.description}
@@ -48,7 +48,7 @@ ${renderScreenshot(data)}
 ## Testing Instructions
   - ${data.tests}
 ### Questions
-  - Please direct questions about this program to ${data.name} at ${data.email}
+  - Please direct questions about this program to ${data.name} at ${data.email}. Questions can also be directed to my Github: ${data.github}
 #### Citations
   - Used for License Badges https://github.com/badges/shields
 `;
