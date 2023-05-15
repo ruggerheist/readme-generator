@@ -22,4 +22,4 @@
   - Please direct questions about this program to Rick Heist at heistrdev@gmail.com. Questions can also be directed to my Github: https://github.com/ruggerheist
 #### Citations
   - Used for License Badges https://github.com/badges/shields
-  -[Link to Walkthrough Video](https://drive.google.com/file/d/18wW72YaHOhM4UVFEZB2qKhtLA1LDJ5gW/view?usp=sharing)
+  - [Link to Walkthrough Video](https://drive.google.com/file/d/18wW72YaHOhM4UVFEZB2qKhtLA1LDJ5gW/view?usp=sharing)
